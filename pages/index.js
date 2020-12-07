@@ -1,21 +1,13 @@
 import React, { Component } from "react";
 import { getPostData } from "../lib/posts";
-import Link from "next/link";
+import { getPost } from "../components/postLists";
 
 export function Home({ allPostdata }) {
+  const data = getPost({ allPostdata });
+
   return (
     <>
-      <div>
-        <ul>
-          {allPostdata.map(({ id, date, title }) => (
-            <li key={id}>
-              {title}
-              <br />
-              <Link href={{ pathname: `posts/${id}` }}>{title}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <div>{data}</div>
     </>
   );
 }

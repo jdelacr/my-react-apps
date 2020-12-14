@@ -1,0 +1,15 @@
+
+.home {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.post_feed {
+    margin: 1rem;
+}
+
+.post_aside {
+    flex-basis: 30%;
+    margin: 1rem;
+}

@@ -1,13 +1,21 @@
 import React, { Component } from "react";
 import matter from "gray-matter";
+import Layout from "../../Layout/Layout";
+import NoPostImgLayout from "../../Layout/posts/NoImgLayout";
+import WithPostImgLayout from "../../Layout/posts/NoImgLayout";
 
 function PostTemplate({ content, data }) {
   const frontmatter = data;
   return (
-    <>
-      <h1>{frontmatter.title}</h1>
-      <p>{content}</p>
-    </>
+    <Layout title={frontmatter.title}>
+      {frontmatter.img != null ? (
+        <WithPostImgLayout headline={frontmatter.title}>
+          {content}
+        </WithPostImgLayout>
+      ) : (
+        <NoPostImgLayout title={frontmatter.title}>{content}</NoPostImgLayout>
+      )}
+    </Layout>
   );
 }
 

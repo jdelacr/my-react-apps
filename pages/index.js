@@ -14,7 +14,7 @@ export function Home({ allPostdata }) {
     <Layout title="Home">
       <div className={styles.home}>
         <div className={styles.post_feed}>{mainPost}</div>
-        <Card className={styles.post_aside}>
+        <Card className={styles.post_aside} elevation={0}>
           <CardContent>
             <Typography variant="h5" component="h5" align="center">
               Welcome to my React post!

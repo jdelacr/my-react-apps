@@ -6,7 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 
-function ElevationNav(props) {
+const ElevationNav = (props) => {
   const { children, window } = props;
 
   const trigger = useScrollTrigger({
@@ -18,12 +18,12 @@ function ElevationNav(props) {
   return React.cloneElement(children, {
     elevation: trigger ? 4 : 0,
   });
-}
+};
 
 export function Header(props) {
   return (
     <ElevationNav {...props}>
-      <AppBar>
+      <AppBar className={nav.navBg}>
         <Toolbar>
           <Typography variant="h6">
             <Link href="/">

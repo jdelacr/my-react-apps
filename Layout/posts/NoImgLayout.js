@@ -10,13 +10,16 @@ function NoImgLayout({
   return (
     <>
       <div>
-        <Typography variant="h2" component="h2" align="center" gutterbottom>
+        <Typography
+          variant="h2"
+          component="h2"
+          align="center"
+          gutterbottom="true"
+        >
           {headline}
         </Typography>
         <Divider />
-        <Typography variant="body1" component="body1">
-          {children}
-        </Typography>
+        <Typography variant="body1">{children}</Typography>
       </div>
     </>
   );

@@ -23,9 +23,7 @@ function ImgLayout({
         </Typography>
         <Divider />
         <div className={style.postBody}>
-          <Typography variant="body1" component="body1">
-            {children}
-          </Typography>
+          <Typography variant="body1">{children}</Typography>
         </div>
         <Divider />
         <Typography variant="body2">{author}</Typography>

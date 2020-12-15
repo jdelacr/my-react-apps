@@ -16,10 +16,10 @@ export class Footer extends Component {
   render() {
     return (
       <footer className={`${style.footer} ${style.footerBg}`}>
-        <Box className={`${style.footerLeft}`}>
+        <div className={`${style.footerLeft}`}>
           <img src="/React.png" alt="React Logo" className={style.footerLogo} />
-        </Box>
-        <Box className={`${style.footerRight}`}>
+        </div>
+        <div className={`${style.footerRight}`}>
           <Typography variant="h5" align="center">
             Sitemap
           </Typography>
@@ -38,7 +38,7 @@ export class Footer extends Component {
               <ListItemText primary="Contacts" />
             </ListItemLink>
           </List>
-        </Box>
+        </div>
       </footer>
     );
   }

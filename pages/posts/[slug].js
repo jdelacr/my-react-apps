@@ -31,16 +31,12 @@ function PostTemplate({ content, data }) {
 
 PostTemplate.getInitialProps = async (context) => {
   const { slug } = context.query;
-  console.log({ slug });
 
   const content = await import(`../../posts/${slug}.md`);
-  /* console.log(content); */
 
   const data = matter(content.default);
 
   return { ...data };
-
-  return { slug };
 };
 
 export default PostTemplate;

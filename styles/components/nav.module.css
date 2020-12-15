@@ -1,5 +1,9 @@
 .nav{
     padding: 1rem .5rem;
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
+}
+
+.navBg {
+    background-color: #fafafa !important;
 }

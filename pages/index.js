@@ -19,7 +19,7 @@ export function Home({ allPostdata }) {
             <Typography variant="h5" component="h5" align="center">
               Welcome to my React post!
             </Typography>
-            <Typography variant="body1" component="body1">
+            <Typography variant="body1">
               The purpose of this blog is to track my progress on using React.js
               and give my initial thoughts and progress on making an app using
               React.js. The blog is currently hosted in Netlify.

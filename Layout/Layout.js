@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Container from "@material-ui/core/Container";
 import Toolbar from "@material-ui/core/Toolbar";
 import "fontsource-roboto";
+import style from "../styles/components/layout.module.css";
 
 function Layout({ children, title = "No title" }) {
   return (
@@ -18,7 +19,10 @@ function Layout({ children, title = "No title" }) {
       </Head>
       <Header />
       <Toolbar />
-      <Container maxWidth="md">{children}</Container>
+      <Container maxWidth="md" className={style.layoutHeight}>
+        {children}
+      </Container>
+      <Toolbar />
       <Footer />
     </>
   );

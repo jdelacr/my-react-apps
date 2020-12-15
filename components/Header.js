@@ -31,17 +31,17 @@ export function Header(props) {
             </Link>
           </Typography>
           <Typography variant="h6">
-            <Link href="/about">
+            <Link href="/posts">
               <a className={nav.nav}>Posts</a>
             </Link>
           </Typography>
           <Typography variant="h6">
-            <Link href="/contact">
+            <Link href="/about">
               <a className={nav.nav}>About</a>
             </Link>
           </Typography>
           <Typography variant="h6">
-            <Link href="/posts">
+            <Link href="/contact">
               <a className={nav.nav}>Contact</a>
             </Link>
           </Typography>

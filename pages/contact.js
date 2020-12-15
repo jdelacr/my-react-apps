@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import Layout from "../Layout/Layout";
 
 export class contact extends Component {
   render() {
-    return <div>contact</div>;
+    return <Layout>contact</Layout>;
   }
 }
 

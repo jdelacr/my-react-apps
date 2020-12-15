@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import Layout from "../Layout/Layout";
 
 export class about extends Component {
   render() {
-    return <div>about</div>;
+    return <Layout>dsdsds</Layout>;
   }
 }
 

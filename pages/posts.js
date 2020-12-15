@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import Layout from "../Layout/Layout";
 
 export class posts extends Component {
   render() {
-    return <div>posts</div>;
+    return <Layout>posts</Layout>;
   }
 }
 

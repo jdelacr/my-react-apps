@@ -39,7 +39,7 @@ function posts({ allPostdata }) {
   const mainPost = getPost({ allPostdata });
 
   return (
-    <Layout>
+    <Layout title="React Posts">
       <FormControl>
         <InputLabel>Sort</InputLabel>
         <Select value={sortedPost} onChange={handleSort}>

@@ -6,6 +6,7 @@ import Layout from "../Layout/Layout";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+import Divider from "@material-ui/core/Divider";
 
 export function Home({ allPostdata }) {
   const mainPost = getPost({ allPostdata });
@@ -13,7 +14,13 @@ export function Home({ allPostdata }) {
   return (
     <Layout title="Home">
       <div className={styles.home}>
-        <div className={styles.post_feed}>{mainPost}</div>
+        <div className={styles.post_feed}>
+          <Typography variant="h3" component="h3">
+            Latest Posts:
+          </Typography>
+          <Divider />
+          <div>{mainPost}</div>
+        </div>
         <Card className={styles.post_aside} elevation={0}>
           <CardContent>
             <Typography variant="h5" component="h5" align="center">

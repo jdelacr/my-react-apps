@@ -14,15 +14,15 @@ export function getPost({ allPostdata }) {
         <li key={id} className={card.post_list}>
           <Card>
             <CardContent>
-              <Typography variant="h4" component="h1">
-                <Link href={{ pathname: `posts/${id}` }}>
+              <Typography variant="h4">
+                <Link href={{ pathname: `/posts/${id}` }}>
                   <a className={card.post_link}>{title}</a>
                 </Link>
               </Typography>
               <Typography variant="caption">{date}</Typography>
             </CardContent>
             <CardActions>
-              <Link href={{ pathname: `posts/${id}` }} component="button">
+              <Link href={{ pathname: `/posts/${id}` }} component="button">
                 <Button size="small">Read Post</Button>
               </Link>
             </CardActions>

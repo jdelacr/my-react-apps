@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../Layout/Layout";
+import style from "../styles/pages/post.module.css";
 import { getPostData } from "../lib/posts";
 import { getPost } from "../components/MainPost";
 import FormControl from "@material-ui/core/FormControl";
@@ -40,7 +41,7 @@ function posts({ allPostdata }) {
 
   return (
     <Layout title="React Posts">
-      <FormControl>
+      <FormControl className={style.postSelect}>
         <InputLabel>Sort</InputLabel>
         <Select value={sortedPost} onChange={handleSort}>
           <MenuItem value={"latest"}>Latest</MenuItem>

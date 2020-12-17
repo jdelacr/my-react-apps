@@ -24,6 +24,7 @@ function Layout({ children, title = "No title" }) {
       <Header />
       <Toolbar />
       <Container maxWidth="md" className={style.layoutHeight}>
+        <Toolbar />
         {children}
       </Container>
       <Toolbar />

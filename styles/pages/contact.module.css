@@ -1,0 +1,15 @@
+.contact{
+    display: flex;
+}
+
+.contactRight {
+    flex: 1;
+}
+
+.contactLeft {
+    flex: 1;
+}
+
+.contactImg{
+    width: 100%;
+}

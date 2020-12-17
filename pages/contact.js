@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 import Layout from "../Layout/Layout";
 import style from "../styles/pages/contact.module.css";
-import Typography from "@material-ui/core/Typography";
-import Toolbar from "@material-ui/core/Toolbar";
-import Divider from "@material-ui/core/Divider";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
+import { Typography, Toolbar, Divider } from "@material-ui/core";
+import { Card, CardContent } from "@material-ui/core";
+import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import PhoneIcon from "@material-ui/icons/Phone";
+import EmailIcon from "@material-ui/icons/Email";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
+function ListItemLink(props) {
+  return <ListItem button component="a" target="_blank" {...props} />;
+}
 
 export class contact extends Component {
   render() {
@@ -23,7 +29,41 @@ export class contact extends Component {
           <div className={style.contactLeft}>
             <Card>
               <CardContent>
-                <Typography>dsds</Typography>
+                <Typography>Contacts:</Typography>
+                <Divider />
+                <List>
+                  <ListItem>
+                    <ListItemIcon>
+                      <EmailIcon />
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="delacruz.janjustyn@gmail.com"
+                      secondary="Email"
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemIcon>
+                      <PhoneIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="(571)-426-0429" secondary="Phone" />
+                  </ListItem>
+                </List>
+                <Typography>Socials:</Typography>
+                <Divider />
+                <List>
+                  <ListItemLink href="https://www.linkedin.com/in/janjustyn/">
+                    <ListItemIcon>
+                      <LinkedInIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="LinkedIn" />
+                  </ListItemLink>
+                  <ListItemLink href="https://github.com/jdelacr">
+                    <ListItemIcon>
+                      <GitHubIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Github" />
+                  </ListItemLink>
+                </List>
               </CardContent>
             </Card>
           </div>

@@ -30,10 +30,10 @@ export class about extends Component {
         <Divider />
         <Toolbar />
         <Typography>
-          Most of my projects will be hosted on Netlify. For the backend, it
-          will vary as some might be hosted in Firebase or Heroku, depending
-          which one is in need the most. The blog is currently using Material-UI
-          as the CSS framework to ease the creation of the blog.
+          Most of my projects will be hosted on Vercel. For the backend, it will
+          vary as some might be hosted in Firebase or Heroku, depending which
+          one is in need the most. The blog is currently using Material-UI as
+          the CSS framework to ease the creation of the blog.
         </Typography>
       </Layout>
     );

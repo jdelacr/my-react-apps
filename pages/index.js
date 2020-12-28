@@ -34,7 +34,7 @@ export function Home({ allPostdata }) {
             <Typography variant="body1">
               The purpose of this blog is to track my progress on using React.js
               and give my initial thoughts and progress on making an app using
-              React.js. The blog is currently hosted in Netlify.
+              React.js. The blog is currently hosted in Vercel.
             </Typography>
           </CardContent>
         </Card>

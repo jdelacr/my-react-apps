@@ -13,6 +13,7 @@ function PostTemplate({ content, data }) {
           headline={frontmatter.title}
           author={frontmatter.author}
           img={frontmatter.img}
+          date={frontmatter.date}
         >
           {content}
         </WithPostImgLayout>
@@ -21,6 +22,7 @@ function PostTemplate({ content, data }) {
           headline={frontmatter.title}
           title={frontmatter.title}
           author={frontmatter.author}
+          date={frontmatter.date}
         >
           {content}
         </NoPostImgLayout>

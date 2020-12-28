@@ -15,7 +15,11 @@ export function Home({ allPostdata }) {
     <Layout title="Home">
       <div className={styles.home}>
         <div className={styles.post_feed}>
-          <Typography variant="h3" component="h3">
+          <Typography
+            variant="h3"
+            component="h3"
+            className={styles.post_header}
+          >
             Latest Posts:
           </Typography>
           <Divider />
@@ -26,6 +30,7 @@ export function Home({ allPostdata }) {
             <Typography variant="h5" component="h5" align="center">
               Welcome to my React post!
             </Typography>
+            <Divider />
             <Typography variant="body1">
               The purpose of this blog is to track my progress on using React.js
               and give my initial thoughts and progress on making an app using

@@ -23,3 +23,19 @@
 .footerLogo {
     height: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .footerLeft {
+        order: 2;
+    }
+
+    .footerLogo {
+        width: 100%;
+    }
+
+    .footerRight {
+        flex-basis: 100%;
+        padding: .5rem;
+    }
+}

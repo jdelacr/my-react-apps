@@ -13,3 +13,13 @@
 .contactImg{
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contactLeft {
+        order: 1;
+    }
+}

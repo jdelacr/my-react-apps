@@ -8,6 +8,7 @@ function ImgLayout({
   headline = "No Headline",
   author = "Unknown Author",
   img = "default",
+  date,
 }) {
   return (
     <>
@@ -18,15 +19,18 @@ function ImgLayout({
           component="h2"
           align="center"
           gutterbottom="true"
+          className={style.postHeader}
         >
           {headline}
         </Typography>
         <Divider />
-        <div className={style.postBody}>
-          <Typography variant="body1">{children}</Typography>
+        <div className={style.postAuthor}>
+          <Typography variant="subtitle1">{author}</Typography>
+          <Typography variant="subtitle2">{date}</Typography>
         </div>
-        <Divider />
-        <Typography variant="body2">{author}</Typography>
+        <div className={style.postBody}>
+          <Typography variant="h5">{children}</Typography>
+        </div>
       </div>
     </>
   );

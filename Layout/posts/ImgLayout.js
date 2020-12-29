@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import style from "../../styles/components/posts.module.css";
+import ReactMarkdown from "react-markdown";
 
 function ImgLayout({
   children,
@@ -29,7 +30,9 @@ function ImgLayout({
           <Typography variant="subtitle2">{date}</Typography>
         </div>
         <div className={style.postBody}>
-          <Typography variant="h5">{children}</Typography>
+          <Typography variant="h5">
+            <ReactMarkdown source={children} />
+          </Typography>
         </div>
       </div>
     </>

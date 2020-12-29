@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import style from "../../styles/components/posts.module.css";
+import ReactMarkdown from "react-markdown";
 
 function NoImgLayout({
   children,
@@ -26,7 +27,9 @@ function NoImgLayout({
           <Typography variant="subtitle1">{author}</Typography>
           <Typography variant="subtitle2">{date}</Typography>
         </div>
-        <Typography variant="h5">{children}</Typography>
+        <Typography variant="h5">
+          <ReactMarkdown source={children} />
+        </Typography>
       </div>
     </>
   );
